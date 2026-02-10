@@ -1,71 +1,70 @@
-Elevate - Blog Posts Application
+Elevate - Posts Application
 Project Overview
-This project is a pixel-perfect, post-style application built as part of the Elevate Frontend Advanced Bootcamp. The application allows users to explore blog posts, view detailed content with comments, and create new posts using a modern and responsive UI.
+This project is a high-performance, post-style application built as part of the Elevate Frontend Advanced Bootcamp Task. The application simulates a real-world social feed where users can browse, filter, and view detailed information about blog posts, along with their associated comments.
 
-The design follows a unique Mount Everest theme, incorporating Glassmorphism effects with backdrop blurs and semi-transparent elements to provide a premium user experience.
+The core focus of this project was achieving a pixel-perfect UI based on the provided Figma design, maintaining a clean and scalable codebase, and implementing robust form handling and validation.
 
 Key Features
-Dynamic Post Feed: Fetches and displays a list of posts from the JSONPlaceholder API.
+Dynamic Post Feed: Displays a list of posts fetched from the JSONPlaceholder API.
 
-Advanced Filtering: Users can filter posts by title (search) or by author using a dedicated dropdown.
 
-Post Details: A dedicated page for each post featuring a custom Hero section with a mountain-themed gradient and full comments integration.
+Advanced Filtering: Includes a title-based search and an author-based filter (fetching real users from the /users endpoint).
 
-Create Post Form: A fully validated form using React Hook Form and Zod, featuring real-time error messages and success notifications via Toasts.
 
-Custom Pagination: Smooth navigation through posts with a custom-built pagination component.
+Post Details: A dedicated page for each post featuring a custom Hero Section with a Mount Everest mountain theme and integrated comments.
 
-Pixel-Perfect UI: Strict adherence to the provided Figma design, ensuring precise spacing, typography, and layout.
+Pixel-Perfect UI: Implemented strictly according to Figma specifications, including Glassmorphism effects (75% opacity and 8px backdrop blur).
+
+Custom Pagination: A manual pagination system to navigate through the post list smoothly.
+
+Form Validation: (If implemented) Secure post creation using React Hook Form and Zod.
 
 Tech Stack
 
-Framework: ReactJS.
+Core: ReactJS (Vite).
 
 Styling: Tailwind CSS & Shadcn UI.
 
+
 Routing: React Router DOM.
+
 
 Data Fetching: Axios.
 
-Validation: Zod with React Hook Form.
 
 Icons: Lucide Icons.
 
-API: JSONPlaceholder.
 
-Design Implementation Details
-Layout: Centered 1200px max-width container with 120px horizontal padding.
+Validation: Zod & React Hook Form.
 
-Glassmorphism: White cards with 75% opacity and 8px backdrop blur.
+Folder Structure
+The project follows a modular and scalable directory structure:
 
-Typography: Clean font system using the Inter family with varied weights.
-
-Hero Section: Custom 412px height header with a professional blue gradient overlay.
-
-How to Run the Project Locally
-
+Plaintext
+src/
+ ├── assets/          # Static files (images, fonts)
+ ├── components/      # Reusable UI components (Navbar, Pagination, etc.)
+ ├── hooks/           # Custom React hooks for data logic
+ ├── services/        # API service layer (Axios configurations) 
+ ├── pages/           # Main application pages (Home, PostDetails)
+ └── lib/             # Utility libraries and validation schemas
+How to Run Locally
 1. Clone the repository
-   Bash
-   git clone [your-repository-link]
-   cd elevate-posts-task
-2. Install dependencies
-   Bash
-   npm install
-3. Start the development server
-   Bash
-   npm run dev
-   Project Structure
-   Plaintext
-   src/
-   ├── assets/ # Static assets (Mount Everest background)
-   ├── components/ # Reusable UI components (Pagination, Layout, etc.)
-   ├── hooks/ # Custom React hooks
-   ├── services/ # API service layer (Axios instance) [cite: 34]
-   ├── pages/ # Main application pages (Home, Detail, Create)
-   └── lib/ # Utility functions and Zod schemas
-   Future Improvements
-   Implementation of real-time search using server-side filtering.
+Bash
+git clone https://github.com/your-username/elevate-posts-task.git
+cd elevate-posts-task
+2. Install Dependencies
+Bash
+npm install
+3. Run the Development Server
+Bash
+npm run dev
+The app will be available at http://localhost:5173.
 
-Adding Dark Mode support while maintaining the Glassmorphism effect.
 
-Enhanced state management using React Query for better caching.
+Additional Improvements 
+
+State Management: While Axios was used for direct fetching, implementing React Query could enhance caching and server-state synchronization.
+
+
+
